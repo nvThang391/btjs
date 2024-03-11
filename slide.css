@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.carousel{
+    position: relative;
+    overflow: hidden;
+}
+img{
+    max-width:  100%;
+    height: auto;
+}
+.carousel .carousel-img{
+    display: flex;
+    transition: 0.3s translate linear;
+}
+.carousel .nav-btn span{
+    position: absolute;
+    top: 50%;
+    translate: 0 -50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background: gray;
+    cursor: pointer;
+}
+.carousel  .nav-btn span.prev{
+    left: 5px;
+}
+.carousel .nav-btn span.next{
+    right: 5px;
+}
+.nav-dots span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(231, 231, 231, 0.805);
+}
+.nav-dots{
+    display: flex;
+    column-gap: 5px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+.color-dot , .active{
+    background-color: #ffa318 !important;
+}
